@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<application xmlns:soa="http://www.oracle.com/soa/rest" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns0="http://TargetNamespace.com/GET_CustomerBIZ_GETCustomerBIZOperation_request" xmlns="http://wadl.dev.java.net/2009/02">
+   <doc title="GET_CustomerBIZ">RestReference</doc>
+   <grammars>
+      <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <xsd:import namespace="http://TargetNamespace.com/GET_CustomerBIZ_GETCustomerBIZOperation_request" schemaLocation="Schema/customer_request_biz.xsd"/>
+        </xsd:schema>
+      <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <xsd:import namespace="http://TargetNamespace.com/GET_CustomerBIZ_GETCustomerBIZOperation_response" schemaLocation="Schema/customer_response_biz.xsd"/>
+        </xsd:schema>
+   </grammars>
+   <resources>
+      <resource path="/customer">
+         <method name="GET" soa:wsdlOperation="GETCustomerBIZOperation">
+            <request soa:paramElement="pns:Root-Element" xmlns:pns="http://TargetNamespace.com/GET_CustomerBIZ_GETCustomerBIZOperation_request">
+               <param name="taxIdentificationNumber" style="query" soa:expression="$msg.request/ns0:customer/ns0:taxIdentificationNumber" type="xsd:string"/>
+            </request>
+            <response status="200">
+               <representation mediaType="application/json" element="cns:Root-Element" xmlns:cns="http://TargetNamespace.com/GET_CustomerBIZ_GETCustomerBIZOperation_response"/>
+            </response>
+         </method>
+      </resource>
+   </resources>
+</application>
