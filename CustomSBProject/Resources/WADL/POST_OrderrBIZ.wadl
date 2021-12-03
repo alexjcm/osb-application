@@ -3,10 +3,10 @@
    <doc title="POST_OrderrBIZ">RestReference</doc>
    <grammars>
       <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-            <xsd:import namespace="http://TargetNamespace.com/POST_OrderrBIZ_POSTOrderrBIZOperation_request" schemaLocation="Schema/orderr_request_biz.xsd"/>
+            <xsd:import namespace="http://TargetNamespace.com/POST_OrderrBIZ_POSTOrderrBIZOperation_request" schemaLocation="../Schema/orderr_request_biz.xsd"/>
         </xsd:schema>
       <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-            <xsd:import namespace="http://TargetNamespace.com/POST_OrderrBIZ_POSTOrderrBIZOperation_response" schemaLocation="Schema/orderr_response_biz.xsd"/>
+            <xsd:import namespace="http://TargetNamespace.com/POST_OrderrBIZ_POSTOrderrBIZOperation_response" schemaLocation="../Schema/orderr_response_biz.xsd"/>
         </xsd:schema>
    </grammars>
    <resources>

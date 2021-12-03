@@ -2,7 +2,7 @@
 <con:pipelineEntry xmlns:con="http://www.bea.com/wli/sb/pipeline/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:coreEntry>
         <con:binding type="SOAP" isSoap12="false" xsi:type="con:SoapBindingType">
-            <con:wsdl ref="CustomSBProject/Resources/MainPS"/>
+            <con:wsdl ref="CustomSBProject/Resources/WSDL/MainPS"/>
             <con:binding>
                 <con:name>MainPS_ptt-binding</con:name>
                 <con:namespace>http://xmlns.oracle.com/TestOSBApplication/CustomSBProject/MainPS</con:namespace>

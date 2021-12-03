@@ -1,20 +1,24 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://TargetNamespace.com/MainPS_OrderrDetailPSOperation_response" targetNamespace="http://TargetNamespace.com/MainPS_OrderrDetailPSOperation_response" elementFormDefault="qualified" xmlns:nxsd="http://xmlns.oracle.com/pcbpel/nxsd" nxsd:version="JSON" nxsd:encoding="US-ASCII">
-   <xsd:element name="Root-Element">
-      <xsd:complexType>
-         <xsd:sequence>
-            <xsd:element name="orderrDetail">
-               <xsd:complexType>
-                  <xsd:sequence>
-                     <xsd:element name="id" type="xsd:integer"/>
-                  </xsd:sequence>
-               </xsd:complexType>
-            </xsd:element>
-         </xsd:sequence>
-      </xsd:complexType>
-   </xsd:element>
-<xsd:annotation xmlns="">
-      <xsd:appinfo>NXSDSAMPLE=</xsd:appinfo>
-      <xsd:appinfo>USEHEADER=false</xsd:appinfo>
-   </xsd:annotation>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns="http://TargetNamespace.com/MainPS_OrderrDetailPSOperation_response"
+            targetNamespace="http://TargetNamespace.com/MainPS_OrderrDetailPSOperation_response"
+            elementFormDefault="qualified" xmlns:nxsd="http://xmlns.oracle.com/pcbpel/nxsd" nxsd:version="JSON"
+            nxsd:encoding="US-ASCII">
+  <xsd:element name="Root-Element">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="orderrDetail">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="id" type="xsd:integer"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:annotation xmlns="">
+    <xsd:appinfo>NXSDSAMPLE=</xsd:appinfo>
+    <xsd:appinfo>USEHEADER=false</xsd:appinfo>
+  </xsd:annotation>
 </xsd:schema>

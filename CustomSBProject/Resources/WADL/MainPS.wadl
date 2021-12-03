@@ -1,0 +1,71 @@
+<application xmlns:soa="http://www.oracle.com/soa/rest" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns1="http://TargetNamespace.com/GET_ProductBIZ_GETProductBIZOperation_request" xmlns:ns0="http://TargetNamespace.com/GET_CustomerBIZ_GETCustomerBIZOperation_request" xmlns="http://wadl.dev.java.net/2009/02" xmlns:ns2="http://TargetNamespace.com/MainPS_OrderrPSOperation_request" xmlns:ns3="http://TargetNamespace.com/MainPS_OrderrDetailPSOperation_request">
+  <doc title="MainPS">Main Proxy Service</doc>
+  <grammars>
+    <xsd:schema>
+      <xsd:import namespace="http://TargetNamespace.com/GET_CustomerBIZ_GETCustomerBIZOperation_request" schemaLocation="../Schema/customer_request_biz.xsd"/>
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import namespace="http://TargetNamespace.com/MainPS_CustomerPSOperation_response" schemaLocation="../Schema/customer_response_ps.xsd"/>
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import namespace="http://TargetNamespace.com/GET_ProductBIZ_GETProductBIZOperation_request" schemaLocation="../Schema/product_request_biz.xsd"/>
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import namespace="http://TargetNamespace.com/MainPS_ProductPSOperation_response" schemaLocation="../Schema/product_response_ps.xsd"/>
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import namespace="http://TargetNamespace.com/MainPS_OrderrPSOperation_request" schemaLocation="../Schema/orderr_request_ps.xsd"/>
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import namespace="http://TargetNamespace.com/MainPS_OrderrPSOperation_response" schemaLocation="../Schema/orderr_response_ps.xsd"/>
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import namespace="http://TargetNamespace.com/MainPS_OrderrDetailPSOperation_request" schemaLocation="../Schema/orderrdetail_request_ps.xsd"/>
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import namespace="http://TargetNamespace.com/MainPS_OrderrDetailPSOperation_response" schemaLocation="../Schema/orderrdetail_response_ps.xsd"/>
+    </xsd:schema>
+  </grammars>
+  <resources>
+    <resource path="/customer">
+      <method name="POST" soa:wsdlOperation="CustomerPSOperation">
+        <request>
+          <representation mediaType="application/json" element="cns:Root-Element" xmlns:cns="http://TargetNamespace.com/GET_CustomerBIZ_GETCustomerBIZOperation_request"/>
+        </request>
+        <response status="200">
+          <representation mediaType="application/json" element="cns:Root-Element" xmlns:cns="http://TargetNamespace.com/MainPS_CustomerPSOperation_response"/>
+        </response>
+      </method>
+    </resource>
+    <resource path="/product">
+      <method name="POST" soa:wsdlOperation="ProductPSOperation">
+        <request>
+          <representation mediaType="application/json" element="cns:Root-Element" xmlns:cns="http://TargetNamespace.com/GET_ProductBIZ_GETProductBIZOperation_request"/>
+        </request>
+        <response status="200">
+          <representation mediaType="application/json" element="cns:Root-Element" xmlns:cns="http://TargetNamespace.com/MainPS_ProductPSOperation_response"/>
+        </response>
+      </method>
+    </resource>
+    <resource path="/orderr">
+      <method name="POST" soa:wsdlOperation="OrderrPSOperation">
+        <request>
+          <representation mediaType="application/json" element="cns:Root-Element" xmlns:cns="http://TargetNamespace.com/MainPS_OrderrPSOperation_request"/>
+        </request>
+        <response status="200">
+          <representation mediaType="application/json" element="cns:Root-Element" xmlns:cns="http://TargetNamespace.com/MainPS_OrderrPSOperation_response"/>
+        </response>
+      </method>
+    </resource>
+    <resource path="/orderrdetail">
+      <method name="POST" soa:wsdlOperation="OrderrDetailPSOperation">
+        <request>
+          <representation mediaType="application/json" element="cns:Root-Element" xmlns:cns="http://TargetNamespace.com/MainPS_OrderrDetailPSOperation_request"/>
+        </request>
+        <response status="200">
+          <representation mediaType="application/json" element="cns:Root-Element" xmlns:cns="http://TargetNamespace.com/MainPS_OrderrDetailPSOperation_response"/>
+        </response>
+      </method>
+    </resource>
+  </resources>
+</application>

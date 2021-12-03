@@ -1,13 +1,25 @@
-<wsdl:definitions name="POST_OrderrDetailBIZ" targetNamespace="http://xmlns.oracle.com/TestOSBApplication/CustomSBProject/POST_OrderrDetailBIZ" xmlns:tns="http://xmlns.oracle.com/TestOSBApplication/CustomSBProject/POST_OrderrDetailBIZ" xmlns:inp1="http://TargetNamespace.com/POST_OrderrDetailBIZ_POSTOrderrDetailBIZOperation_request" xmlns:inp2="http://TargetNamespace.com/POST_OrderrDetailBIZ_POSTOrderrDetailBIZOperation_response" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+<?xml version= '1.0' encoding= 'UTF-8' ?>
+<wsdl:definitions
+     name="POST_OrderrDetailBIZ"
+     targetNamespace="http://xmlns.oracle.com/TestOSBApplication/CustomSBProject/POST_OrderrDetailBIZ"
+     xmlns:tns="http://xmlns.oracle.com/TestOSBApplication/CustomSBProject/POST_OrderrDetailBIZ"
+     xmlns:inp1="http://TargetNamespace.com/POST_OrderrDetailBIZ_POSTOrderrDetailBIZOperation_request"
+     xmlns:inp2="http://TargetNamespace.com/POST_OrderrDetailBIZ_POSTOrderrDetailBIZOperation_response"
+     xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype"
+     xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+     xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    >
     <plnk:partnerLinkType name="POST_OrderrDetailBIZ">
         <plnk:role name="POST_OrderrDetailBIZProvider" portType="tns:POST_OrderrDetailBIZ_ptt"/>
     </plnk:partnerLinkType>
     <wsdl:types>
         <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-            <xsd:import namespace="http://TargetNamespace.com/POST_OrderrDetailBIZ_POSTOrderrDetailBIZOperation_request" schemaLocation="Schema/orderrdetail_request_biz.xsd"/>
+            <xsd:import namespace="http://TargetNamespace.com/POST_OrderrDetailBIZ_POSTOrderrDetailBIZOperation_request"
+                 schemaLocation="../Schema/orderrdetail_request_biz.xsd"/>
         </xsd:schema>
         <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-            <xsd:import namespace="http://TargetNamespace.com/POST_OrderrDetailBIZ_POSTOrderrDetailBIZOperation_response" schemaLocation="Schema/orderrdetail_response_biz.xsd"/>
+            <xsd:import namespace="http://TargetNamespace.com/POST_OrderrDetailBIZ_POSTOrderrDetailBIZOperation_response"
+                 schemaLocation="../Schema/orderrdetail_response_biz.xsd"/>
         </xsd:schema>
     </wsdl:types>
     <wsdl:message name="POSTOrderrDetailBIZOperation_inputMessage">

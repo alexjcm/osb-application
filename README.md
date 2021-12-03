@@ -9,7 +9,7 @@ This repository includes the following two projects:
 
 - Java 8
 - Oracle Database 18 XE
-- JDeveloper 12c
-- WebLogic 12
+- Oracle JDeveloper 12c
+- Oracle WebLogic 12
 - REST web service
 

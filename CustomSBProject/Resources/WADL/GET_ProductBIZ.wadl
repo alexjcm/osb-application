@@ -3,10 +3,10 @@
    <doc title="GET_ProductBIZ">RestReference</doc>
    <grammars>
       <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-            <xsd:import namespace="http://TargetNamespace.com/GET_ProductBIZ_GETProductBIZOperation_request" schemaLocation="Schema/product_request_biz.xsd"/>
+            <xsd:import namespace="http://TargetNamespace.com/GET_ProductBIZ_GETProductBIZOperation_request" schemaLocation="../Schema/product_request_biz.xsd"/>
         </xsd:schema>
       <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-            <xsd:import namespace="http://TargetNamespace.com/GET_ProductBIZ_GETProductBIZOperation_response" schemaLocation="Schema/product_response_biz.xsd"/>
+            <xsd:import namespace="http://TargetNamespace.com/GET_ProductBIZ_GETProductBIZOperation_response" schemaLocation="../Schema/product_response_biz.xsd"/>
         </xsd:schema>
    </grammars>
    <resources>
