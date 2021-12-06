@@ -11,5 +11,5 @@ This repository includes the following two projects:
 - Oracle Database 18 XE
 - Oracle JDeveloper 12c
 - Oracle WebLogic 12
-- REST web service
+- REST web service: https://github.com/alexjcm/rest-web-service-with-jdev
 
