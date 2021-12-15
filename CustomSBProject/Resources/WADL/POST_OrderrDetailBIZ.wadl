@@ -3,11 +3,11 @@
    <doc title="POST_OrderrDetailBIZ">RestReference</doc>
    <grammars>
       <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <xsd:import namespace="http://TargetNamespace.com/POST_OrderrDetailBIZ_POSTOrderrDetailBIZOperation_request" schemaLocation="../Schema/orderrdetail_request_biz.xsd"/>
-    </xsd:schema>
+            <xsd:import namespace="http://TargetNamespace.com/POST_OrderrDetailBIZ_POSTOrderrDetailBIZOperation_request" schemaLocation="../Schema/orderrdetail_request_biz.xsd"/>
+        </xsd:schema>
       <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <xsd:import namespace="http://TargetNamespace.com/POST_OrderrDetailBIZ_POSTOrderrDetailBIZOperation_response" schemaLocation="../Schema/orderrdetail_response_biz.xsd"/>
-    </xsd:schema>
+            <xsd:import namespace="http://TargetNamespace.com/POST_OrderrDetailBIZ_POSTOrderrDetailBIZOperation_response" schemaLocation="../Schema/orderrdetail_response_biz.xsd"/>
+        </xsd:schema>
    </grammars>
    <resources>
       <resource path="/orderrdetail">
