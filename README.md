@@ -1,9 +1,9 @@
-# REST Service virtualization with OSB
+# Service virtualization with OSB
 
 This repository includes the following two projects:
 
-- CustomESBProject project.
-- EmailSBproject project.
+- CustomESBProject project.- REST Service virtualization
+- EmailSBproject project. SOAP Service virtualization
 
 ## Prerequisites
 
