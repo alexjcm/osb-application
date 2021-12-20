@@ -30,7 +30,7 @@
     </binding>
     <service name="MyEmailService">
         <port name="MyEmailServicePort" binding="tns:MyEmailServicePortBinding">
-            <soap12:address location="http://127.0.1.1:7101/EmailProject-send-email/MyEmailServicePort"/>
+            <soap12:address location="http://localhost:7101/EmailProject-send-email/MyEmailServicePort"/>
         </port>
     </service>
 </definitions>
