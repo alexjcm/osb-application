@@ -26,3 +26,17 @@ To open the application from JDeveloper click on the **File** > **Open** menu an
 
 To deploy from JDeveloper click **Application** > **Deploy** menu.
 
+
+## Obtain the WSDL file
+
+### Option 1. Using the WSDL URL
+
+http://localhost:7101/EmailSBProject/EmailPS?WSDL
+
+### Option 2. Exporting a WSDL file from a Project or Folder in the OSB Console
+
+1. In the Project Browser open the project containing the WSDL file you want to export.
+2. Open the folder containing the proxy or business service whose WSDL file you want to export.
+3. Right-click on the proxy or business service whose WSDL file you want to export and then click Export WSDL.
+4. Unzip the generated .jar file to view the exported WSDL.
+
