@@ -2,7 +2,7 @@
 <con:businessServiceEntry xmlns:con="http://xmlns.oracle.com/servicebus/business/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:oper="http://xmlns.oracle.com/servicebus/business/operations" xmlns:ser="http://www.bea.com/wli/sb/services" xmlns:tran="http://www.bea.com/wli/sb/transports" xmlns:env="http://www.bea.com/wli/config/env" xmlns:http="http://www.bea.com/wli/sb/transports/http">
     <con:coreEntry>
         <con1:binding type="SOAP" xsi:type="con:SoapBindingType" isSoap12="true" xmlns:con="http://www.bea.com/wli/sb/services/bindings/config" xmlns:con1="http://xmlns.oracle.com/servicebus/business/config">
-            <con:wsdl ref="EmailSBProject/Resources/MyEmailServicePort"/>
+            <con:wsdl ref="EmailSBProject/WSDLs/MyEmailServicePort"/>
             <con:port>
                 <con:name>MyEmailServicePort</con:name>
                 <con:namespace>http://email/</con:namespace>

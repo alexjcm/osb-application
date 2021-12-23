@@ -17,7 +17,9 @@ This repository includes the following two projects:
 
 Clone this repository:
 
-`git clone https://github.com/alexjcm/osb-application.git`
+```
+git clone https://github.com/alexjcm/osb-application.git
+```
 
 To open the application from JDeveloper click on the **File** > **Open** menu and open the `*.jws` file of the newly cloned repository.
 

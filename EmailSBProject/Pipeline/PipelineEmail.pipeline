@@ -2,7 +2,7 @@
 <con:pipelineEntry xmlns:con="http://www.bea.com/wli/sb/pipeline/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:coreEntry>
         <con:binding type="SOAP" isSoap12="true" xsi:type="con:SoapBindingType">
-            <con:wsdl ref="EmailSBProject/Resources/MyEmailServicePort"/>
+            <con:wsdl ref="EmailSBProject/WSDLs/MyEmailServicePort"/>
             <con:binding>
                 <con:name>MyEmailServicePortBinding</con:name>
                 <con:namespace>http://email/</con:namespace>
