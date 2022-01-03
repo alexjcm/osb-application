@@ -3,33 +3,32 @@
 This repository includes the following two projects:
 
 - CustomESBProject project.- REST Service virtualization
-- EmailSBproject project. SOAP Service virtualization
+- EmailSBproject project.- SOAP Service virtualization to send emails
 
 ## Prerequisites
 
 - Oracle JDeveloper 12c
-- Oracle WebLogic 12
-- REST web service: https://github.com/alexjcm/rest-web-service-with-jdev
-- SOAP web service: https://github.com/alexjcm/soap-web-service-with-jdev
+- Oracle WebLogic 12c
+- REST and SOAP web services: https://github.com/alexjcm/web-services-with-jdeveloper
 
 
 ## Installation
 
-Clone this repository:
+First clone this repository:
 
 ```
 git clone https://github.com/alexjcm/osb-application.git
 ```
 
-To open the application from JDeveloper click on the **File** > **Open** menu and open the `*.jws` file of the newly cloned repository.
+Then open the application from JDeveloper click on the **File** > **Open** menu and open the `*.jws` file of the newly cloned repository.
 
 
 ## Deployment
 
-To deploy from JDeveloper click **Application** > **Deploy** menu.
+To deploy the application from JDeveloper click **Application** > **Deploy** menu.
 
 
-## Obtain the WSDL file
+## Get the WSDL file from the SOAP service
 
 ### Option 1. Using the WSDL URL
 
