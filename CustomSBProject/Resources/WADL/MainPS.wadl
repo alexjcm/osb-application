@@ -3,35 +3,35 @@
    <doc title="MainPS">Main Proxy Service</doc>
    <grammars>
       <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <xsd:import namespace="http://TargetNamespace.com/GET_CustomerBIZ_GETCustomerBIZOperation_request" schemaLocation="../Schema/customer_request_biz.xsd"/>
-    </xsd:schema>
+            <xsd:import namespace="http://TargetNamespace.com/GET_CustomerBIZ_GETCustomerBIZOperation_request" schemaLocation="../Schema/customer_request_biz.xsd"/>
+        </xsd:schema>
       <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <xsd:import namespace="http://TargetNamespace.com/MainPS_CustomerPSOperation_response" schemaLocation="../Schema/customer_response_ps.xsd"/>
-    </xsd:schema>
+            <xsd:import namespace="http://TargetNamespace.com/MainPS_CustomerPSOperation_response" schemaLocation="../Schema/customer_response_ps.xsd"/>
+        </xsd:schema>
       <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <xsd:import namespace="http://TargetNamespace.com/GET_ProductBIZ_GETProductBIZOperation_request" schemaLocation="../Schema/product_request_biz.xsd"/>
-    </xsd:schema>
+            <xsd:import namespace="http://TargetNamespace.com/GET_ProductBIZ_GETProductBIZOperation_request" schemaLocation="../Schema/product_request_biz.xsd"/>
+        </xsd:schema>
       <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <xsd:import namespace="http://TargetNamespace.com/MainPS_ProductPSOperation_response" schemaLocation="../Schema/product_response_ps.xsd"/>
-    </xsd:schema>
+            <xsd:import namespace="http://TargetNamespace.com/MainPS_ProductPSOperation_response" schemaLocation="../Schema/product_response_ps.xsd"/>
+        </xsd:schema>
       <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <xsd:import namespace="http://TargetNamespace.com/MainPS_OrderrPSOperation_request" schemaLocation="../Schema/orderr_request_ps.xsd"/>
-    </xsd:schema>
+            <xsd:import namespace="http://TargetNamespace.com/MainPS_OrderrPSOperation_request" schemaLocation="../Schema/orderr_request_ps.xsd"/>
+        </xsd:schema>
       <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <xsd:import namespace="http://TargetNamespace.com/MainPS_OrderrPSOperation_response" schemaLocation="../Schema/orderr_response_ps.xsd"/>
-    </xsd:schema>
+            <xsd:import namespace="http://TargetNamespace.com/MainPS_OrderrPSOperation_response" schemaLocation="../Schema/orderr_response_ps.xsd"/>
+        </xsd:schema>
       <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <xsd:import namespace="http://TargetNamespace.com/MainPS_OrderrDetailPSOperation_request" schemaLocation="../Schema/orderrdetail_request_ps.xsd"/>
-    </xsd:schema>
+            <xsd:import namespace="http://TargetNamespace.com/MainPS_OrderrDetailPSOperation_request" schemaLocation="../Schema/orderrdetail_request_ps.xsd"/>
+        </xsd:schema>
       <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <xsd:import namespace="http://TargetNamespace.com/MainPS_OrderrDetailPSOperation_response" schemaLocation="../Schema/orderrdetail_response_ps.xsd"/>
-    </xsd:schema>
+            <xsd:import namespace="http://TargetNamespace.com/MainPS_OrderrDetailPSOperation_response" schemaLocation="../Schema/orderrdetail_response_ps.xsd"/>
+        </xsd:schema>
    </grammars>
    <resources>
       <resource path="/customer">
-         <method name="POST" soa:wsdlOperation="CustomerPSOperation">
-            <request>
-               <representation mediaType="application/json" element="cns:Root-Element" xmlns:cns="http://TargetNamespace.com/GET_CustomerBIZ_GETCustomerBIZOperation_request"/>
+         <method name="GET" soa:wsdlOperation="CustomerPSOperation">
+            <request soa:paramElement="pns:Root-Element" xmlns:pns="http://TargetNamespace.com/GET_CustomerBIZ_GETCustomerBIZOperation_request">
+               <param name="taxIdentificationNumber" style="query" soa:expression="$msg.request/ns0:customer/ns0:taxIdentificationNumber" type="xsd:string"/>
             </request>
             <response status="200">
                <representation mediaType="application/json" element="cns:Root-Element" xmlns:cns="http://TargetNamespace.com/MainPS_CustomerPSOperation_response"/>
@@ -39,9 +39,9 @@
          </method>
       </resource>
       <resource path="/product">
-         <method name="POST" soa:wsdlOperation="ProductPSOperation">
-            <request>
-               <representation mediaType="application/json" element="cns:Root-Element" xmlns:cns="http://TargetNamespace.com/GET_ProductBIZ_GETProductBIZOperation_request"/>
+         <method name="GET" soa:wsdlOperation="ProductPSOperation">
+            <request soa:paramElement="pns:Root-Element" xmlns:pns="http://TargetNamespace.com/GET_ProductBIZ_GETProductBIZOperation_request">
+               <param name="productCode" style="query" soa:expression="$msg.request/ns1:product/ns1:productCode" type="xsd:string"/>
             </request>
             <response status="200">
                <representation mediaType="application/json" element="cns:Root-Element" xmlns:cns="http://TargetNamespace.com/MainPS_ProductPSOperation_response"/>

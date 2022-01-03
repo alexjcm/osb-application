@@ -31,8 +31,20 @@
                                         <con1:service ref="CustomSBProject/Business/GET_CustomerBIZ" xsi:type="ref:BusinessServiceRef" xmlns:ref="http://www.bea.com/wli/sb/reference"/>
                                         <con1:operation>GETCustomerBIZOperation</con1:operation>
                                         <con1:outboundTransform>
+                                            <con2:replace varName="body" contents-only="true" xmlns:con2="http://www.bea.com/wli/sb/stages/transform/config">
+                                                <con3:id xmlns:con3="http://www.bea.com/wli/sb/stages/config">_ActionId-7f000101.N67c63a26.0.17e1cda9a24.N7ffe</con3:id>
+                                                <con2:expr>
+                                                    <con3:xqueryTransform xmlns:con3="http://www.bea.com/wli/sb/stages/config">
+                                                        <con3:resource ref="CustomSBProject/Resources/XQY/customer_in"/>
+                                                        <con3:param name="cust_sourcer_in">
+                                                            <con3:path>$body/*</con3:path>
+                                                        </con3:param>
+                                                    </con3:xqueryTransform>
+                                                </con2:expr>
+                                            </con2:replace>
                                             <con2:insert varName="body" xmlns:con2="http://www.bea.com/wli/sb/stages/transform/config">
                                                 <con3:id xmlns:con3="http://www.bea.com/wli/sb/stages/config">_ActionId-7f000101.5f5da3c.0.17d6486bc6a.N7f5b</con3:id>
+                                                <con3:disabled xmlns:con3="http://www.bea.com/wli/sb/stages/config">true</con3:disabled>
                                                 <con2:location>
                                                     <con3:xpathText xmlns:con3="http://www.bea.com/wli/sb/stages/config">./ctx:transport/ctx:request</con3:xpathText>
                                                 </con2:location>
@@ -76,8 +88,20 @@
                                         <con1:service ref="CustomSBProject/Business/GET_ProductBIZ" xsi:type="ref:BusinessServiceRef" xmlns:ref="http://www.bea.com/wli/sb/reference"/>
                                         <con1:operation>GETProductBIZOperation</con1:operation>
                                         <con1:outboundTransform>
+                                            <con2:replace varName="body" contents-only="true" xmlns:con2="http://www.bea.com/wli/sb/stages/transform/config">
+                                                <con3:id xmlns:con3="http://www.bea.com/wli/sb/stages/config">_ActionId-7f000101.N67c63a26.0.17e1cda9a24.N7ffa</con3:id>
+                                                <con2:expr>
+                                                    <con3:xqueryTransform xmlns:con3="http://www.bea.com/wli/sb/stages/config">
+                                                        <con3:resource ref="CustomSBProject/Resources/XQY/product_in"/>
+                                                        <con3:param name="prod_source_in">
+                                                            <con3:path>$body/*</con3:path>
+                                                        </con3:param>
+                                                    </con3:xqueryTransform>
+                                                </con2:expr>
+                                            </con2:replace>
                                             <con2:insert varName="body" xmlns:con2="http://www.bea.com/wli/sb/stages/transform/config">
                                                 <con3:id xmlns:con3="http://www.bea.com/wli/sb/stages/config">_ActionId-7f000101.5f5da3c.0.17d6486bc6a.N7f58</con3:id>
+                                                <con3:disabled xmlns:con3="http://www.bea.com/wli/sb/stages/config">true</con3:disabled>
                                                 <con2:location>
                                                     <con3:xpathText xmlns:con3="http://www.bea.com/wli/sb/stages/config">./ctx:transport/ctx:request</con3:xpathText>
                                                 </con2:location>
